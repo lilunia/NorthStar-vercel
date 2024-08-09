@@ -1,0 +1,23 @@
+.mainMenu {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1rem;
+	padding: 1rem;
+}
+.mainMenu li a {
+	text-transform: uppercase;
+	color: var(--color-text-default);
+	padding: 1rem 0;
+	margin-bottom: 0;
+	text-align: center;
+	display: block;
+	font-weight: 700;
+	width: 6rem;
+}
+.mainMenu li a:hover {
+	color: var(--color-theme-primary);
+}
+.mainMenu li a:global(.active) {
+	color: var(--color-theme-primary);
+}

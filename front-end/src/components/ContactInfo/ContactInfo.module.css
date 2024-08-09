@@ -1,0 +1,167 @@
+.contact,
+.formEmail,
+.formName,
+.formMessage {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	width: 100%;
+}
+
+.contactHeader {
+	margin: 1em 0em 1em;
+	font-size: 1.5rem;
+	color: var(--color-theme-primary);
+	text-align: center;
+}
+.description,
+.place,
+.email,
+.form,
+.send {
+	margin-bottom: 3em;
+}
+.description {
+	padding: 0 2em;
+}
+.place,
+.email,
+.description,
+.form,
+.formDetails,
+.send {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	width: 100%;
+}
+.place,
+.email {
+	padding: 0 1em;
+}
+.form {
+	align-items: center;
+}
+.description p,
+.email p {
+	text-align: left;
+}
+
+.formMessage,
+.send {
+	margin-bottom: 2em;
+}
+.error {
+	margin-bottom: 2em;
+	color: rgb(108, 30, 30);
+}
+.send {
+	padding: 2em;
+	height: 26rem;
+	background-color: var(--color-grey);
+}
+.send p {
+	margin-bottom: 1em;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: left;
+}
+input {
+	padding: 0.75em;
+}
+
+label {
+	margin-bottom: 0.5em;
+	color: var(--color-theme-primary);
+}
+textarea {
+	resize: vertical;
+	height: 10rem;
+	max-height: 20rem;
+}
+
+@media (min-width: 768px) {
+	.description {
+		padding-left: 3em;
+	}
+	.formDetails {
+		flex-direction: row;
+	}
+	.formEmail,
+	.formName,
+	.formMessage {
+		padding: 1em 2em 1em;
+	}
+	.formName {
+		padding-left: 1em;
+	}
+	.formEmail {
+		padding-right: 1em;
+	}
+	.send {
+		height: 20rem;
+	}
+	.place,
+	.email {
+		padding: 0 2em;
+	}
+}
+
+@media (min-width: 992px) {
+	.description {
+		padding-left: 6em;
+	}
+	.description p {
+		font-size: 1.25rem;
+	}
+	.detailsInfo {
+		display: flex;
+		align-items: start;
+		flex-direction: row;
+	}
+	.place,
+	.email {
+		width: 50%;
+		padding: 0 5em;
+	}
+	.formEmail,
+	.formName,
+	.formMessage,
+	.send {
+		padding: 1em 5em 1em;
+	}
+	.formName {
+		padding-left: 1em;
+	}
+	.formEmail {
+		padding-right: 1em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.contact {
+		flex-direction: row;
+		padding: 0 5em 0;
+	}
+	.form,
+	.detailsInfo,
+	.place,
+	.email,
+	.send {
+		width: 50%;
+	}
+	.formEmail,
+	.formName,
+	.formMessage {
+		padding: 1em;
+	}
+	.detailsInfo {
+		margin-left: 2em;
+	}
+	.place,
+	.email {
+		margin: 0 1em 0;
+		padding: 0;
+	}
+}

@@ -1,0 +1,60 @@
+.footer {
+	width: 100%;
+	background-color: var(--color-grey);
+	color: var(--color-text-default);
+	flex-wrap: wrap;
+}
+.footerMainInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-wrap: wrap;
+	padding: 5rem 2rem 0;
+	height: 80%;
+}
+.footerColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.footerColumn img {
+	cursor: pointer;
+}
+.footerColumn p,
+.footerPolicy p {
+	text-align: left;
+}
+.footerInput {
+	width: 90%;
+	padding-bottom: 0.5rem;
+	border: none;
+	background: transparent;
+	border-bottom: 0.0625rem solid var(--color-text-default);
+}
+.footerAddInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	margin: 1rem 2rem;
+	flex-wrap: wrap;
+}
+.footerPolicy {
+	display: flex;
+	flex-direction: column;
+}
+.footerCards {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 0;
+}
+h5 {
+	margin: 2rem 0;
+	text-transform: uppercase;
+}
+.footer a {
+	margin-bottom: 1rem;
+}
+hr {
+	color: var(--color-grey);
+	margin: 2rem 0;
+}

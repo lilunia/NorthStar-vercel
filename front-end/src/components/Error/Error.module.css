@@ -1,0 +1,11 @@
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10em;
+}
+.error h3{
+    text-align: left;
+    margin-bottom: 2em;
+}

@@ -1,0 +1,16 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-items: center;
+	margin: 2rem 0;
+	gap: 1rem;
+}
+
+.pagination li a {
+	padding: 1em;
+	cursor: pointer;
+}
+.selected {
+	border-bottom: 0.125em solid var(--color-theme-primary);
+}

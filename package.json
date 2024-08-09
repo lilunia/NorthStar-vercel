@@ -1,0 +1,27 @@
+{
+	"name": "react-northstar",
+	"workspaces": [
+		"front-end",
+		"back-end"
+	],
+	"dependencies": {
+		"body-scroll-lock": "^4.0.0-beta.0",
+		"cors": "^2.8.5",
+		"cp": "^0.2.0",
+		"dotenv": "^16.4.5",
+		"json-server": "^1.0.0-beta.1",
+		"npm-run-all": "^4.1.5",
+		"react-responsive": "^10.0.0",
+		"vercel": "^35.1.0"
+	},
+	"scripts": {
+		"reset": "cp \"./back-end/backup/original_db.json\" ./back-end/db.json",
+		"front-end": "npm run dev --workspace=front-end",
+		"back-end": "npm run dev --workspace=back-end",
+		"build": "vite build",
+		"dev": "npm-run-all --parallel front-end back-end"
+	},
+	"devDependencies": {
+		"concurrently": "^8.2.2"
+	}
+}

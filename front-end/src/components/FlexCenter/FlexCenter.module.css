@@ -1,0 +1,16 @@
+.flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 3rem;
+	padding-bottom: 3rem;
+	width: 100%;
+}
+
+@media (min-width: 992px) {
+	.flexCenter {
+		align-items: start;
+		flex-direction: row;
+	}
+}

@@ -1,0 +1,67 @@
+.aboutInfo {
+	margin-bottom: 2rem;
+	padding: 1em 2em;
+	text-align: center;
+	font-size: 1rem;
+	color: var(--color-text-grey);
+	font-weight: 300;
+}
+.photos,
+.man {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.photos{
+	margin-bottom: 3rem;
+}
+.man {
+	width: 100%;
+}
+.womanImg,
+.manImg {
+	margin: 2em;
+	width: 18rem;
+	height: 25rem;
+}
+.name {
+	font-size: 2rem;
+	color: var(--color-theme-primary);
+}
+.aboutMan {
+	padding: 1em 2em;
+	text-align: left;
+	font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+	.womanImg,
+	.manImg {
+		margin: 2em;
+		height: 40rem;
+		width: 27rem;
+	}
+	.aboutMan {
+		text-align: left;
+	}
+}
+@media (min-width: 992px) {
+	.man {
+		width: 50%;
+	}
+	.photos {
+		flex-direction: row;
+	}
+	.aboutMan,
+	.aboutInfo {
+		font-size: 1.25rem;
+	}
+}
+@media (min-width: 1200px) {
+	.womanImg,
+	.manImg {
+		height: 50rem;
+		width: 35rem;
+	}
+}

@@ -1,0 +1,34 @@
+.baner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 3rem 0;
+}
+.banerColumn {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	margin: 1rem 2rem;
+	width: 20rem;
+	height: 5rem;
+}
+.banerText {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	flex-wrap: wrap;
+	margin: 0 1rem;
+	width: 100%;
+}
+.banerText h4 {
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--color-text-default);
+}
+.banerText p {
+	text-align: start;
+	color: var(--color-text-grey);
+}

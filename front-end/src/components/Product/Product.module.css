@@ -1,0 +1,42 @@
+.product {
+	position: relative;
+	margin: 0 1rem;
+}
+.photoContainer {
+	overflow: hidden;
+	padding: 0;
+	width: 300px;
+	height: 410px;
+}
+.photoContainer img {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+}
+.photoContainer img:hover {
+	transform: scale(1.1);
+}
+.product h4 {
+	font-weight: 700;
+	margin: 1rem 0;
+}
+.product p {
+	text-align: center;
+	color: var(--color-theme-primary);
+}
+.product button {
+	border: none;
+}
+
+.heart {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url('../../assets/heart.svg');
+	background-repeat: none;
+}
+.heart:hover {
+	background-image: url('../../assets/heart-full.svg');
+}

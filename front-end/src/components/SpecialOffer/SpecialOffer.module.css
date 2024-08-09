@@ -1,0 +1,34 @@
+.specialOffer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+}
+.specialInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 1rem;
+	width: 100%;
+	height: 25rem;
+	background-color: var(--color-offer);
+}
+.specialHeader {
+	font-size: 2rem;
+	margin: 1rem;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: var(--color-white);
+}
+.specialText {
+	margin: 2rem;
+	line-height: 1.5;
+	color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+	.specialOffer {
+		flex-wrap: nowrap;
+	}
+}

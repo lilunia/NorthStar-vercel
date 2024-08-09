@@ -1,0 +1,11 @@
+.productsWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+p {
+	text-align: center;
+	font-size: 1rem;
+}
+
