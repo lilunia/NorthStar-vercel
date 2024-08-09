@@ -11,10 +11,6 @@ server.use(middlewares)
 
 server.use((req, res, next) => {
 	req.db = router.db
-	res.header('Access-Control-Allow-Origin', '*')
-	res.header('Access-Control-Allow-Methods', 'GET,POST,PATCH,DELETE')
-	res.header('Access-Control-Allow-Headers', 'origin, authorization')
-	res.header('Access-Control-Allow-Credentials', true)
 	next()
 })
 
