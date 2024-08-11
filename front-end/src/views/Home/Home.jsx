@@ -11,6 +11,7 @@ import { NavLink, useLoaderData } from 'react-router-dom'
 
 export function Home() {
 	const products = useLoaderData()
+console.log(products);
 	const news = products[0]
 	const bestsellers = products[1]
 

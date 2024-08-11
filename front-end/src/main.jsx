@@ -81,7 +81,7 @@ const router = createBrowserRouter([
 		],
 	},
 ])
-
+console.log('lalal');
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
 		<RouterProvider router={router}></RouterProvider>
