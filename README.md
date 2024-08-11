@@ -5,7 +5,7 @@ This shop was created using **Vite + React.js + React Router**. This project is 
 ## Live on Vercel
 
 - front-end
-  <a href="https://north-star-vercel-front-end.vercel.app/">NorthStar - eCommerce Fashion Website</a>
+  <a href="https://north-star-front.vercel.app/">NorthStar - eCommerce Fashion Website</a>
 
 - back-end
   <a href="https://north-star-back-end.vercel.app/">NorthStar - back-end</a>
