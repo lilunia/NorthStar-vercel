@@ -2,17 +2,6 @@
 
 This shop was created using **Vite + React.js + React Router**. This project is a functional e-commerce application that allows users to browse products, add them to the shopping cart and to the favourites list. The website also includes contact and about pages.
 
-<p align="center">
-<img src="./front-end/src/assets/home.PNG"width= "70%" height= "70%" alt="Main app screenshot">
-</p>
-
-## Table of contents
-
-- [Features](#Features)
-- [Live](#Live)
-- [Technologies](#technologies)
-- [Screenshots](#screenshots)
-
 ## Live on Vercel
 
 - front-end
@@ -20,6 +9,17 @@ This shop was created using **Vite + React.js + React Router**. This project is 
 
 - back-end
   <a href="https://north-star-back-end.vercel.app/">NorthStar - back-end</a>
+
+
+<p align="center">
+<img src="./front-end/src/assets/home.PNG"width= "70%" height= "70%" alt="Main app screenshot">
+</p>
+
+## Table of contents
+
+- [Features](#Features)
+- [Technologies](#technologies)
+- [Screenshots](#screenshots)
 
 ## Features
 
