@@ -8,4 +8,4 @@ export const ENDPOINT_TO_PATH_MAPING_GENDER = {
 	men: 'man',
 }
 
-export const BACK_END_URL = 'https://north-star-back-end.vercel.app'
+export const BACK_END_URL = 'https://northstar-back-end.vercel.app'
