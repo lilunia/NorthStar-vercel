@@ -1,21 +1,33 @@
-const jsonServer = require('json-server')
+// index.js
+const express = require('express')
+const mongoose = require('mongoose')
 const cors = require('cors')
-const server = jsonServer.create()
-const path = require('path');
-// const router = jsonServer.router('db.json')
-const middlewares = jsonServer.defaults()
-const router = jsonServer.router(path.join(__dirname, 'db.json'));
+const cartRoutes = require('../routes/cart') // cart routes
+const jsonServer = require('json-server') // to products
+const path = require('path')
+require('dotenv').config()
 
-const port = 5000
-server.use(cors())
-server.use(middlewares)
-server.use((req, res, next) => {
-	req.db = router.db
-	next()
-})
-server.use(router)
-server.listen(port, () => {
-	console.log(`JSON Server is running on PORT ${port}`)
-})
+const app = express()
+app.use(cors())
+app.use(express.json())
 
-module.exports = server;
+// connection with MongoDB for cart
+mongoose.connect('mongodb://localhost:27017/shopDB')
+	.then(() => console.log('Connected to MongoDB'))
+	.catch(err => console.error('Could not connect to MongoDB...', err))
+
+// json-server configuration for products
+const productRouter = jsonServer.router(path.join(__dirname, 'db.json'))
+const productMiddlewares = jsonServer.defaults()
+
+// Setting the /api/products path to read from db.json
+app.use('/products', productMiddlewares, productRouter)
+
+// Setting the /api/cart path for MongoDB
+app.use('/cart', cartRoutes)
+
+// Starting the server
+const port = process.env.PORT || 5000
+app.listen(port, () => {
+	console.log(`Server running on port ${port}`)
+})
